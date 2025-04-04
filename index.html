@@ -9,12 +9,13 @@
 <body>
     <aside>
         <div class="operations">
-            <button class="operation-btn">Suma</button>
-            <button class="operation-btn">Resta</button>
-            <button class="operation-btn">Multiplicacion</button>
+            <button id="suma" class="operation-btn">Suma</button>
+            <button id="resta" class="operation-btn">Resta</button>
+            <button id="multiplicacion" class="operation-btn">Multiplicacion</button>
             <button id="determinante" class="operation-btn">Determinante</button>
             <button id="transpuesta" class="operation-btn">Traspuesta</button>
-            <button class="operation-btn">Inversa</button>
+            <button id="adjunta" class="operation-btn">Adjunta</button>
+            <button id="inversa" class="operation-btn">Inversa</button>
         </div>
     </aside>
     <div class="container">
@@ -40,6 +41,20 @@
                         <div class="matrix matrixA">
                             
                         </div>
+                    </div>
+                    <div class="matrix-section">
+                        <h2 class="section-title">Matrix B</h2>
+                        <div class="dimensions">
+                            <div class="dimension-input">
+                                <label for="rows-b">Filas:</label>
+                                <input type="number" id="rows-b" min="1" max="5" value="3">
+                            </div>
+                            <div class="dimension-input">
+                                <label for="cols-b">Columnas:</label>
+                                <input type="number" id="cols-b" min="1" max="5" value="3">
+                            </div>
+                        </div>
+                        <div class="matrix matrixB"></div>
                     </div>
                 </div>
             </div>
