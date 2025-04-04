@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de Matrices!</title>
+</head>
+<body>
+    <aside>
+        <div class="operations">
+            <button class="operation-btn">Suma</button>
+            <button class="operation-btn">Resta</button>
+            <button class="operation-btn">Multiplicacion</button>
+            <button id="determinante" class="operation-btn">Determinante</button>
+            <button id="transpuesta" class="operation-btn">Traspuesta</button>
+            <button class="operation-btn">Inversa</button>
+        </div>
+    </aside>
+    <div class="container">
+        <div class="calculator-container">
+            <div class="calculator-header">
+                <h1>CASIO Calculadora Matriz</h1>
+                <p class="subtitle">calculadora de matrises v0.1</p>
+            </div>
+            <div class="calculator-body">
+                <div class="matrix-container">
+                    <div class="matrix-section">
+                        <h2 class="section-title">Matrix A</h2>
+                        <div class="dimensions">
+                            <div class="dimension-input">
+                                <label for="rows-a">Filas:</label>
+                                <input type="number" id="rows-a" min="1" max="5" value="3">
+                            </div>
+                            <div class="dimension-input">
+                                <label for="cols-a">Columnas:</label>
+                                <input type="number" id="cols-a" min="1" max="5" value="3">
+                            </div>
+                        </div>
+                        <div class="matrix matrixA">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-name">LOBOTOMIA INDUSTRIES © 2007</div>
+        </div>
+    </div>
+    <div class="result-section">
+        <h2 class="section-title">Result</h2>
+        <div class="container-result-no-style">
+            <div class="result-matrix" id="result-matrix">
+                <div class="no-result">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="gray" viewBox="0 0 24 24">
+                        <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                    </svg>
+                    <p style="color: gray; font-size: 14px; margin-top: 8px;">No hay resultados generados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
